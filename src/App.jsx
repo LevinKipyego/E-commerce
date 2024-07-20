@@ -6,6 +6,9 @@ import Navbar from './components/navbar/Navbar'
 import Footer from './components/footer/Footer'
 import Shop from './pages/Shop'
 import ShopCategory from './pages/ShopCategory'
+import Products from './pages/Products'
+import Cart from './pages/Cart'
+import LoginSignup from './pages/LoginSignup'
 
 
 function App() {
@@ -17,13 +20,19 @@ function App() {
     <BrowserRouter>
       <Navbar/>
       
+      
       <Routes>
           <Route path="/"  element = {<Shop/>}></Route>
           <Route path="/Men"  element = {<ShopCategory category = "Men"/>}></Route>
-          <Route path="/"  element = {<ShopCategory category = "Women"/>}></Route>
-          <Route path="/"  element = {<ShopCategory category = "Kids"/>}></Route>
-          <Route path="/"  element = {<Shop/>}></Route>
-          <Route path="/"  element = {<Shop/>}></Route>
+          <Route path="/Women"  element = {<ShopCategory category = "Women"/>}></Route>
+          <Route path="/Kids"  element = {<ShopCategory category = "Kids"/>}></Route>
+          <Route path="/products"  element = {<Products/>}>
+              <Route path=':productId' element={<Products/>}></Route>
+          
+          </Route>
+          <Route path="/cart"  element = {<Cart/>}></Route>
+          <Route path="/login"  element = {<LoginSignup/>}></Route>
+          
       </Routes>
     </BrowserRouter>
     <Footer/>
