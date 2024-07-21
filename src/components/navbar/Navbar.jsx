@@ -4,6 +4,7 @@ import React , { useState } from 'react'
 
 import './Navbar.css'
 
+import shopper_logo from '../assets/navbar/shopper2.png'
 import cart_logo from '../assets/cart_1.png'
 import { Link } from 'react-router-dom'
 
@@ -14,7 +15,7 @@ const [menu, setMenu] = useState("shop")
   return (
     <div className='navbar'>
       <div className="nav-logo">
-        <img src="" alt="" />
+        <img className='shopper-logo' src= { shopper_logo } alt="" />
         <p>SHOPPER</p>
         </div>
 
@@ -26,7 +27,7 @@ const [menu, setMenu] = useState("shop")
         </ul>
         <div className="nav-login-cart">
           <button><Link Link style={{textDecoration:'none'}} to='/login'>Login</Link></button>
-          <Link Link style={{textDecoration:'none'}} to='/cart'><img src={cart_logo} alt="" /></Link>
+          <Link Link style={{textDecoration:'none'}} to='/cart'><img  className='cart-logo' src={cart_logo} alt="" /></Link>
           <div className="nav-cat-count">0</div>
         </div>
     </div>
