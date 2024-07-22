@@ -2,7 +2,8 @@
     height: 100vh;
     background: linear-gradient(180deg, #fde1ff,#f0a05622 60%);
     display: flex;
-    
+    z-index: -1;
+    object-fit: cover;
 }
 
 
@@ -26,7 +27,7 @@
     color: #090909;
     font-size: 26px;
     font-weight: 500;
-
+    
 }
 .hero-left p {
     color: #171717;
@@ -44,8 +45,8 @@
     height: 35px;
     border-radius: 75px;
     margin-top: 30px;
-    transform: translateY(40px);
-    background: #ff4141;
+    transform: translateY(140px);
+    background: #f56200;
     color:white;
     font-size: 18px;
     font-weight: 500;
@@ -57,16 +58,55 @@
     justify-content: center;
 
 }
- 
-.hero-right ::before{
 
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
-    z-index: 0;
+@media screen  and (max-width:600px){
+    .hero{
+    flex-direction: column-reverse;
+    height:auto;
     object-fit: cover;
+    
+}
+
+.hero-right img{
+    width: 100vw;
+    object-fit: cover;
+}
+
+.sec2{
+    transform: translateY(0px);
+}
+
+.hero-left{
+    gap: 20px;
+    padding-left: 18px;
+    line-height: 1.1;
+    margin-left: 30px;
+   margin-bottom: 100px;
+}
+
+.hero-left h4 {
+    font-size: 17px;
+    margin-top: 12px;
+    color: #e69057;
+}
+.hero-left p {
+    
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.hero-latest-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 270px;
+    height: 30px;
+    border-radius: 75px;
+    margin-top: 20px;
+    transform: translateY(0px);
+    font-size: 14px;
+   
+}
 }

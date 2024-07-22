@@ -1,7 +1,8 @@
 import React from 'react'
+import 'boxicons'
 import './Hero.css'
 
-import hero_image from '../assets/hero/900.jpg'
+import hero_image from '../assets/hero/9003.png'
 
 const Hero = () => {
   return (
@@ -20,6 +21,7 @@ const Hero = () => {
             
             <div className="hero-latest-btn">
                 <div>Latest Collection</div>
+                <i className='bx bx-chevrons-right' ></i>
                 <img src="" alt="" />
             </div>
         </div>
