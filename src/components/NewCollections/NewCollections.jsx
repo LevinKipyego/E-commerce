@@ -1,15 +1,15 @@
 import React from 'react'
-import './Popular.css'
-import product_data from '../assets/data'
+import "./NewCollections.css"
+import new_collection from '../assets/new_collections'
 import Items from '../items/Items'
 
-const Popular = () => {
+const NewCollections = () => {
   return (
-    <div className='popular'>
-        <h1>POPULAR IN WOMEN</h1>
+    <div className='new-collections'>
+        <h1>COLLECTIONS</h1>
         <hr />
-        <div className="popular-items">
-            { product_data.map( ( item, index ) => {
+        <div className="collections">
+                { new_collection.map( ( item, index ) => {
                 return <Items  key={ index } id = { item.id }  name = { item.name }  Image = { item.Image } description = { item.description }   new_price = { item.new_price }  old_price = { item.old_price }/>
             } ) }
         </div>
@@ -17,4 +17,4 @@ const Popular = () => {
   )
 }
 
-export default Popular
+export default NewCollections

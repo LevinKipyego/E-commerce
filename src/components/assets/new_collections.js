@@ -8,10 +8,10 @@ import jewl_4 from '../assets/jewellery/jewl_6u.png'
 //import jewl_8 from '../assets/jewellery/jewl_8u.png'
 //import jewl_9 from '../assets/jewellery/jewl_9u.png'
 
-let product_data =[
+let new_collection = [
     {
-        id:1,
-        name:"Gold-Silver neck piece",
+        id: 1,
+        name: "Gold-Silver neck piece",
         Image: jewl_3,
         description: "Super Woman",
         new_price: 90.00,
@@ -85,12 +85,11 @@ let product_data =[
         id: 9,
         name: "Gold-Silver neck piece",
         Image: jewl_3,
-        description:"Super Woman",
+        description: "Super Woman",
         new_price: 90.00,
         old_price: 100.00
     },
 
+];
 
-]
-
-export default product_data;
+export default new_collection
