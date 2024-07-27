@@ -10,7 +10,8 @@ import Products from './pages/Products'
 import Cart from './pages/Cart'
 import LoginSignup from './pages/LoginSignup'
 
-
+//Banners
+import women_banner from './components/assets/banners/Artboard 1.png'
 function App() {
   
 
@@ -23,8 +24,8 @@ function App() {
       
       <Routes>
           <Route path="/"  element = {<Shop/>}></Route>
-          <Route path="/Men"  element = {<ShopCategory category = "Men"/>}></Route>
-          <Route path="/Women"  element = {<ShopCategory category = "Women"/>}></Route>
+          <Route path="/Men"  element = {<ShopCategory banner = { women_banner } category = "Men"/>}></Route>
+          <Route path="/Women"  element = {<ShopCategory category = "women"/>}></Route>
           <Route path="/Kids"  element = {<ShopCategory category = "Kids"/>}></Route>
           <Route path="/products"  element = {<Products/>}>
               <Route path=':productId' element={<Products/>}></Route>
