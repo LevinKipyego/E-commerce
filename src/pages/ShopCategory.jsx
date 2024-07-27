@@ -9,16 +9,16 @@ const ShopCategory = ( props ) => {
 
   return (
     <div className = 'shop-category'>
-      <img src={ props.banner }  alt=""/>
+      <img className='shopcategory-banner' src={ props.banner }  alt=""/>
 
       <div className="shopcategory-indexSort">
         <p>
           <span>showing 1-9</span> out of 9 products
         </p>
-      </div>
-       <div className="shopcategory-sort">
+        <div className="shopcategory-sort">
         sort by <img src="" alt="" />
        </div>
+      </div>
         
         <div className="shopcategory-products"> 
           { all_products.map( (item ,index) => {
@@ -30,6 +30,9 @@ const ShopCategory = ( props ) => {
               }
               
           }) }
+        </div>
+        <div className="shopcategory-loadmore">
+          Explore more
         </div>
     </div>
   )
