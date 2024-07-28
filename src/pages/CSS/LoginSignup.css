@@ -1,15 +1,17 @@
 .login-signup{
     width: 100%;
     height: 80vh;
+    
     background: #fce3fe;
-    padding-top: 100px;
+    padding-top: 10px;
 }
 
 .login-signup-container{
     width: 580px;
-    height: 600px;
+    height: 50px;
     margin: auto;
-    padding: 40px 60px;
+    padding-top: 80px;
+    box-sizing: border-box;
 }
 
 .login-signup-container h1{
@@ -24,17 +26,19 @@
 }
 
 .login-signup-fields input{
-    height: 72px;
-    width: 100%;
+    height: 42px;
+    width: 555px;
     padding-left: 20px;
     border: 1px solid #c9c9c9;
     outline: none;
     font-size: 18px;
+    border-radius: 6px;
 }
 
+
 .login-signup-container button{
-    width: 580px;
-    height: 72px;
+    width: 100%;
+    height: 42px;
     color: white;
     background: #ff4141;
     margin-top: 30px;
@@ -42,6 +46,7 @@
     font-size: 24px;
     font-weight: 500;
     cursor: pointer;
+     border-radius: 6px;
 }
 
 .loginsignup-login{
@@ -54,6 +59,7 @@
 .loginsignup-login span{
     color: #ff4141;
     font-weight: 600;
+
 }
 
 .login-signup-agree{
