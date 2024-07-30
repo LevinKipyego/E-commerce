@@ -1,17 +1,18 @@
 .login-signup{
     width: 100%;
     height: 80vh;
-    
     background: #fce3fe;
     padding-top: 10px;
 }
 
 .login-signup-container{
     width: 580px;
-    height: 50px;
+    height: 500px;
     margin: auto;
-    padding-top: 80px;
-    box-sizing: border-box;
+    padding: 40px 60px;
+    box-sizing: content-box;
+   
+    border-radius: 10px;
 }
 
 .login-signup-container h1{
@@ -27,13 +28,14 @@
 
 .login-signup-fields input{
     height: 42px;
-    width: 555px;
+    
     padding-left: 20px;
     border: 1px solid #c9c9c9;
     outline: none;
     font-size: 18px;
     border-radius: 6px;
 }
+
 
 
 .login-signup-container button{
@@ -43,10 +45,10 @@
     background: #ff4141;
     margin-top: 30px;
     border: none;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 500;
     cursor: pointer;
-     border-radius: 6px;
+    border-radius: 6px;
 }
 
 .loginsignup-login{

@@ -19,7 +19,7 @@ let new_collection = [
     },
 
     {
-        id: 2,
+        id: 1,
         name: "Gold-Silver neck piece",
         Image: jewl_4,
         description: "Super Woman",
@@ -88,7 +88,7 @@ let new_collection = [
         description: "Super Woman",
         new_price: 90.00,
         old_price: 100.00
-    },
+    }
 
 ];
 

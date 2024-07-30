@@ -6,12 +6,13 @@ let all_products  = [
         name:"women necklace",
         category:"women",
         Image:img_1,
+        description:'',
         new_price:50.0,
         old_price:80.50,
     },
 
     {
-        id: 1,
+        id: 2,
         name: "women necklace",
         category: "women",
         Image: img_1,
@@ -20,7 +21,7 @@ let all_products  = [
     },
 
     {
-        id: 1,
+        id: 3,
         name: "women necklace",
         category: "women",
         Image: img_1,
@@ -29,7 +30,7 @@ let all_products  = [
     },
 
     {
-        id: 1,
+        id: 4,
         name: "women necklace",
         category: "women",
         Image: img_1,
@@ -38,7 +39,7 @@ let all_products  = [
     },
 
     {
-        id: 1,
+        id: 5,
         name: "women necklace",
         category: "Men",
         Image: img_1,
